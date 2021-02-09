@@ -45,8 +45,6 @@ function createHeroSection() {
   if ($headerImg) {
     const src = $headerImg.getAttribute('src');
     const $wrapper = $headerImg.closest('.section-wrapper');
-    const path = window.location.pathname;
-    path.includes('lunch') ? $wrapper.style.backgroundImage = "url('/hlx_badfd8f4207119f1e7ad796dd3d89ec51f09951c.jpeg')" : console.log('not yet');
     $wrapper.classList.add('hero');
     $headerImg.parentNode.remove();
   }
