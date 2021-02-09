@@ -40,6 +40,8 @@ function wrap(selector, className) {
 
 function createHeroSection() {
   const $headerImg = document.querySelector('main>div:first-of-type>div>:first-child>img');
+    const path = window.location.pathname;
+    path.includes('lunch') ? $('body').css('background-image', 'url("/hlx_badfd8f4207119f1e7ad796dd3d89ec51f09951c.jpeg")') : console.log('not yet');
   if ($headerImg) {
     const src = $headerImg.getAttribute('src');
     const $wrapper = $headerImg.closest('.section-wrapper');
